@@ -76,8 +76,4 @@ jobs:
           git config --local user.email "action[bot]@github.com"
           git config --local user.name "github-actions[bot]"
           git add resume.png
-          if [-z "$(git status --porcelain)"]; then
-             echo "::set-output name=push::false"
-          else
-             git commit -m "[bot] updated resume.png"
-             echo "::set-output name=push::true"
+          git commit -m "[bot] updated resume.png"
