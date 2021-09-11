@@ -49,16 +49,16 @@ jobs:
           RPL="rights=${DQT}read\|write${DQT} pattern=${DQT}PDF${DQT}"
           
           HGT="name=${DQT}height${DQT} value=${DQT}10KP${DQT}"
-          HGTR=name=${DQT}height${DQT} value=${DQT}128Kp${DQT}"
+          HGTR="name=${DQT}height${DQT} value=${DQT}128Kp${DQT}"
           
           WDT="name=${DQT}width${DQT} value=${DQT}10KP${DQT}"
-          WDTR=name=${DQT}width${DQT} value=${DQT}128Kp${DQT}"
+          WDTR="name=${DQT}width${DQT} value=${DQT}128Kp${DQT}"
           
           MAP="name=${DQT}map${DQT} value=${DQT}512MiB${DQT}"
-          MAPR=name=${DQT}map${DQT} value=${DQT}4GiB${DQT}"
+          MAPR="name=${DQT}map${DQT} value=${DQT}4GiB${DQT}"
           
           MEM="name=${DQT}memory${DQT} value=${DQT}256MiB${DQT}"
-          MEMR=name=${DQT}memory${DQT} value=${DQT}2GiB${DQT}"
+          MEMR="name=${DQT}memory${DQT} value=${DQT}2GiB${DQT}"
           
           sudo sed -i "s/$SRC/$RPL/" /etc/ImageMagick-6/policy.xml
           sudo sed -i "s/$HGT/$HGTR/" /etc/ImageMagick-6/policy.xml
