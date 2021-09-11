@@ -25,7 +25,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           name: Resume compiled on ${{ steps.time.outputs.time }}
-          tag_name: ${{ git.ref }}
+          tag_name: ${{ github.ref }}
       - name: Upload Release Asset
         id: upload-release-asset
         uses: actions/upload-release-asset@v1
