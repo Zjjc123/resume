@@ -22,6 +22,7 @@ jobs:
           timeZone: -7
           format: 'YYYY-MM-DD-HH-mm-ss'
       - name: Create Release
+        id: create_release
         uses: softprops/action-gh-release@v1
         with:
           name: Resume compiled on ${{ steps.time.outputs.time }}
