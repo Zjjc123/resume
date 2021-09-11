@@ -10,3 +10,14 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: main.tex
+      - name: Uploading artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: PDF
+          path: main.pdf
+      - name: Create a Release
+        uses: elgohr/Github-Release-Action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          args: Resume
