@@ -1,0 +1,160 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr} 
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\centering
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+
+
+\begin{center}
+    {\large Jason Zhang} \\ \vspace{-2pt}
+    \begin{multicols}{2}
+    \begin{flushleft}
+    \href{{your github page link}}{https://github.com/Zjjc123}\\
+    \href{{your linkedin page link}}{https://linkedin.com/in/zjjc123}
+    \end{flushleft}
+
+    \begin{flushright}
+    \href{{your personal websit link}}{https://jasonzhang.dev/}\\
+    \href{mailto:{your email adress}}{zjjc123@hotmail.com}
+    \end{flushright}
+    \end{multicols}
+\end{center}
+\vspace{-15pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Random Company, Software Development Intern}{February 2021, April 2021}
+      {Company Name Here}{Location, WA}
+      \resumeItemListStart
+        \resumeItem{Did something cool.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Random Company, Software Development Intern}{February 2021, April 2021}
+      {Company Name Here}{Location, WA}
+      \resumeItemListStart
+        \resumeItem{Did something cool.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nikola Tesla STEM High School}{2017 - 2021}
+      {Student}{Redmond, WA}
+  \resumeSubHeadingListEnd
+
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{GPA}{: 3.98/4.0} \\
+     \textbf{AP}{: AP Calculus AB (5/5), AP Calculus BC (5/5), AP Environmental Science (5/5), AP Language and Composition (4/5), AP Chemistry (5/5), AP Statistics (5/5), AP US History (5/5), AP Computer Science A (5/5), AP Physics C: Mechanics (pending), and AP Physics C: Electricity and Magnetism (pending).}
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{Languages and Technologies} 
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{JavaScript}{: Typescript, React, React Native, Redux, Jest, NodeJS} \\
+     \textbf{CI/CD}{: Github Actions, Travis CI, Fastlane} \\
+     \textbf{Cloud}{: Firebase Functions, Firestore, GCP Compute/AutoML, AWS S3/Lambda}\\
+     \textbf{Scripting}{: Python, Bash} \\
+     \textbf{Version Control}{: Git, Github}
+    }}
+ \end{itemize}
+ \vspace{-20pt}
+%-----------EXTRACURRICULAR-----------
+\section{Extracurricular}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Example Activity}{: example.} \\
+     \textbf{Example Activity}{: example.} 
+
+    }}
+
+ \end{itemize}
+
+\end{document}
