@@ -19,7 +19,7 @@ jobs:
         id: time
         uses: nanzm/get-time-action@v1.1
         with:
-          timeZone: 8
+          timeZone: -7
           format: 'YYYY-MM-DD-HH-mm-ss'
       - name: Create Release
         id: create_release
@@ -33,3 +33,13 @@ jobs:
             Resume compiled on ${{ steps.time.outputs.time }}
           draft: false
           prerelease: false
+      - name: Upload Release Asset
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./main.pdf
+          asset_name:  main.pdf
+          asset_content_type: application/pdf
