@@ -27,7 +27,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: Release ${{ steps.time.outputs.time }}
+          tag_name: ${{ github.ref }}
           release_name: Release ${{ steps.time.outputs.time }}
           body: |
             Resume compiled on ${{ steps.time.outputs.time }}
