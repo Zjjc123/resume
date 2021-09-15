@@ -39,7 +39,7 @@ jobs:
           asset_content_type: application/pdf
           
       - name: Install ghostscript
-        run:  apt-get update --fix-missing && sudo apt install ghostscript
+        run: sudo apt-get update --fix-missing && sudo apt install ghostscript
       - name: Change ImageMagick security policy
         run: |
           DQT='"' 
