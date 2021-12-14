@@ -35,7 +35,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./main.pdf
-          asset_name:  jason_zhang_resume_${{ steps.time.outputs.time }}.pdf
+          asset_name:  jason-zhang-resume-${{ steps.time.outputs.time }}.pdf
           asset_content_type: application/pdf
           
       - name: Install ghostscript
