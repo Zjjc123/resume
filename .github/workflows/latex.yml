@@ -20,7 +20,7 @@ jobs:
         uses: nanzm/get-time-action@v1.1
         with:
           timeZone: -7
-          format: 'YYYY-MM-DD-HH-mm-ss'
+          format: 'YYYY-MM-DD'
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
@@ -35,7 +35,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./main.pdf
-          asset_name:  resume-${{ steps.time.outputs.time }}.pdf
+          asset_name:  jason_zhang_resume_${{ steps.time.outputs.time }}.pdf
           asset_content_type: application/pdf
           
       - name: Install ghostscript
