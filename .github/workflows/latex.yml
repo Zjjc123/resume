@@ -72,6 +72,7 @@ jobs:
           git config --local user.email "action[bot]@github.com"
           git config --local user.name "github-actions[bot]"
           git add resume.png
+          git add main.pdf
           git commit -m "[bot] updated resume.png"
       - name: Push changes
         uses: ad-m/github-push-action@master
