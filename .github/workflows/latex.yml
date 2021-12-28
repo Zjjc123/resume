@@ -35,7 +35,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./main.pdf
-          asset_name:  jason-zhang-resume-${{ steps.time.outputs.time }}.pdf
+          asset_name:  "Jiajun (Jason) Zhang resume.pdf"
           asset_content_type: application/pdf
           
       - name: Install ghostscript
@@ -73,7 +73,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add resume.png
           git add main.pdf
-          git commit -m "[bot] updated resume.png"
+          git commit -m "[bot] updated png and pdf"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
