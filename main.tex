@@ -1,200 +1,152 @@
-\documentclass[letterpaper,10pt]{article}
-
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr} 
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\usepackage{multicol}
-\input{glyphtounicode}
-
-\usepackage[default]{sourcesanspro}
-\usepackage[T1]{fontenc}
-
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
 \pagestyle{fancy}
-\fancyhf{} 
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-\titleformat{\section}{
-  \vspace{-4pt}\centering
-}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
-
-
-\pdfgentounicode=1
-
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
+\fancyhf{}
+ 
 \begin{document}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{JASON}{ZHANG}{ 
+\href{mailto:me@jasonzhang.dev}{me@jasonzhang.dev} | +1 (425) 898-3210 | 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Washington}
+\descript{Computer Science}
+\location{2025}
+\sectionsep
 
 
-\begin{center}
-    {\Huge Jason Zhang} \\ \vspace{-2pt}
-    \begin{multicols}{2}
-    \begin{flushleft}
-    \href{{your github page link}}{https://github.com/Zjjc123}\\
-    \href{{your linkedin page link}}{https://linkedin.com/in/zjjc123}
-    \end{flushleft}
 
-    \begin{flushright}
-    \href{{your personal websit link}}{https://jasonzhang.dev/}
-    \\
-    \href{mailto:{your email adress}}{zjjc123@hotmail.com}
-    \\
-    (425) 898 - 3210
-    \end{flushright}
-    \end{multicols}
-\end{center}
-\vspace{-15pt}
-%-----------EXPERIENCE-----------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+\textbf{LinkedIn:} 
+
+\href{https://www.linkedin.com/in/zjjc123/}{https://www.linkedin.com/in/zjjc123/} \\
+\textbf{GitHub:} 
+
+\href{https://github.com/Zjjc123}{https://github.com/Zjjc123} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\descript{Technical Skills}
+\location{Languages/Frameworks}
+C \textbullet{}   C++ \textbullet{} C\# \textbullet{} Java \\
+JavaScript \textbullet{} TypeScript \textbullet{} Python \textbullet{} React
+
+\sectionsep
+
+\location{Technical}
+OOP \textbullet{} Data Structures \textbullet{} Algorithms \\ CI\/CD \textbullet{} Unit Testing \textbullet{}
+ Unity 
+ \\ Version Control \textbullet{} Git \textbullet{} GitHub
+ 
+ \sectionsep
+ 
+ \location{Media and Content}
+Davinci Resolve \textbullet{} Adobe Premiere
+\\ Adobe Photoshop \textbullet{} Adobe Lightroom
+
+\sectionsep
+
+\descript{Soft Skills}
+Problem Solving  \textbullet{} Team Work \\
+Eager to Learn \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {AI THINKTANK, Software Engineer Intern}{July 2020 - September 2020}
-      {AI THINKTANK}{Bellevue, WA}
-      \resumeItemListStart
-        \resumeItem{Developed 3D humanoid kinematics and quaternion rotation techniques \\ for displaying machine learning pose estimation}
-        \resumeItem{Integrated Unity as a Library on Android using C\#, Java, and Kotlin}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
-\vspace{-5pt}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Key Club, Community Service Manager}{March 2020 - June 2021}
-      {Eastlake High School Key Club}{Sammamish, WA}
-      \resumeItemListStart
-        \resumeItem{Created a website for 3000+ students at my high school to track service hours \\ by using JavaScript, React, and Firebase (ehs-service.org)}
-        \resumeItem{Managed an open sourced community on GitHub for future maintenance}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
-\vspace{-5pt}
-%-----------EDUCATION-----------
-\section{Education}
- \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Washington}{2021 - 2025}
-      {Undergraduate Student}{Seattle, WA}
-  \resumeSubHeadingListEnd
+\runsubsection{Sportsbox AI}
+\descript{| Software Engineer Intern }
+\location{July 2020 - September 2020 | Bellevue, WA}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Developed 3D humanoid kinematics and quaternion rotation techniques
+for displaying machine learning pose estimation
+\item Integrated Unity as a Library on Android using C\#, Java, and Kotlin
+\end{tightemize}
+\sectionsep
 
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{GPA}{: 3.91} \\
-     \textbf{Classes}{: Data Structures and Parallelism, Hardware Software Interface, Calculus III, Differential Equations} \\
-     \textbf{Planned}{:Synthetic Biology, Systems Programming}
-    }}
- \end{itemize}
-  \vspace{-10pt}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Eastlake High School}{2017 - 2021}
-      {Student}{Sammamish, WA}
-  \resumeSubHeadingListEnd
+\runsubsection{Key Club}
+\descript{| Community Service Manager }
+\location{March 2020 - June 2021 | Sammamish, WA}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Created a website for 3000+ students at my high school to track service hours by using JavaScript, React, and Firebase.
+\item Managed an open sourced community of 5+ collaborators on GitHub.
+\end{tightemize}
+\sectionsep
 
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{GPA}{: 4.0/4.0} \\
-     \textbf{AP}{: AP Biology (5/5), AP Calculus AB (5/5), AP Calculus BC (5/5), AP Chemistry (5/5), AP Computer Science P (5/5), AP Computer Science A (5/5), AP Government (5/5), AP Macroeconomics (5/5), AP Microeconomics (5/5), AP Statistics (5/5), AP Physics 1 (5/5)..} \\
-     \textbf{Advanced Classes}{: Multivariable Calculus, Linear Algebra}
-    }}
- \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{TECHNICAL PROJECTS}
+\runsubsection{Guipy}
+\descript{| Python}
+\location{May 2022 –  Present }
+Open source UI componenets library published on PYPI for pygame. Aimed to make simulation, graphing, and prototyping in research and corporate settings easy and pain free. Continuous Integration and Deployment with GitHub Actions. 
 
-%-----------PROGRAMMING SKILLS-----------
-\section{Skills and Languages} 
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    \textbf{Languages}{: C, C++, C\#, Java, JavaScript(React, NodeJS), Python, Rust} \\
-     \textbf{CI/CD}{: GitHub Actions} \\
-     \textbf{Cloud}{: Firebase Functions, Firestore}\\
-     \textbf{Version Control}{: Git, GitHub} \\
-     \textbf{Video Editing}{: Davinci Resolve, Adobe Premiere Pro, Adobe After Effects} \\
-     \textbf{Photography and Graphics}{: Adobe Photoshop, Adobe Lightroom} \\
-    }}
- \end{itemize}
- \vspace{-20pt}
+`pip install guipylib`!
+\sectionsep
 
-%-----------EXTRACURRICULAR-----------
-\section{Extracurricular}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{VEX Robotics Team 3638A}{: Worked in a team environment to implement robotics controls,
-autonomous controls, computer vision, PID control, and odometry.
-in C++ and C for the Vex Robotics Competition.} \\
-     \textbf{HOSA International Competitions}{: Won first place internationally at the HOSA International Leadership Conference for creating a public service announcement regarding current health issues.} 
+\runsubsection{Personal Portfolio}
+\descript{| JavaScript}
+\location{April 2020 –  Present }
+Building a fully functional, modern, and responsive personal portfolio website with React. Continuously deployed to GitHub Pages using GitHub Actions. The website contains clean UIs, smooth animations, and an intuitive user experience.
 
-    }}
+\sectionsep
 
- \end{itemize}
- %-----------PROJECTS-----------
-\section{Projects}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    \textbf{Guipy}{: Open-sourced Python UI Library for pygame} \\
-    \textbf{Speechle}{: A wordle clone game with the goal of guessing speech obfuscated with Fourier Transform} \\
-    \textbf{Personal Portfolio}{: Personal portfolio built using React with modern UI and deployed with GitHub Actions} \\
-     \textbf{Cloude}{: A collaborative browser based programming IDE and compiler that allows programmers to work on the same project in real-time without merging conflicts} \\
-     
-     \textbf{Unite NEAT}{: AI Neural Evolution of Augmented Topologies in Unity \\
-     \textbf{N-Body Simulator}{: Python 2D and 3D n-body simulator} \\
-     \textbf{Vitality}{: Health and fitness tracker with on device heartbeat sensor} \\
-    }}}
+\runsubsection{NEAT}
+\descript{| C\#}
+\location{July 2022 –  Present }
+Machine Learning Genetic Algorithm Neural Evolution of Augmenting Topologies Implemented with Unity C\#.
+\sectionsep
 
- \end{itemize}
-
-\end{document}
+\end{minipage} 
+\end{document}  \documentclass[]{article}
