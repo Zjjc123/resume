@@ -8,7 +8,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
+\usepackage[hmargin=1.25cm, vmargin=0.65cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 
 % Publications
