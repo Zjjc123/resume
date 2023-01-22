@@ -21,6 +21,7 @@
 \definecolor{primary}{HTML}{2b2b2b} 
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
+\definecolor{greeno}{HTML}{00A651}
 
 % Set main fonts
 \usepackage{fontspec}
@@ -68,6 +69,10 @@ Last Updated on \today
 \newcommand{\runsubsection}[1]{
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{11pt}{11pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
+\newcommand{\rungreensubsection}[1]{
+\color{greeno}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{11pt}{11pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+
+
 % Descriptors command
 \newcommand{\descript}[1]{
 \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
@@ -80,4 +85,3 @@ Last Updated on \today
 \newenvironment{tightemize}{
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
-
