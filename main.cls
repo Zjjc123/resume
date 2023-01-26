@@ -7,6 +7,9 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
+\usepackage[fontsize=7pt]{fontsize}
+
+
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.65cm]{geometry}
 \usepackage[hidelinks]{hyperref}
@@ -40,7 +43,7 @@ Last Updated on \today
 % Name command
 \newcommand{\namesection}[3]{
 \centering{
-\fontsize{30pt}{50pt}
+\fontsize{25pt}{40pt}
 \fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont #1 
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 } \\[5pt]
@@ -59,14 +62,14 @@ Last Updated on \today
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{15pt}{20pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\scshape\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{17pt}{18pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{11pt}{9pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{10pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{10pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
