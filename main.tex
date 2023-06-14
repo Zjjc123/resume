@@ -8,7 +8,7 @@
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr} 
+\usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{multicol}
@@ -45,7 +45,7 @@
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-3pt}}
   }
 }
 
@@ -82,119 +82,156 @@
 
 \begin{document}
 
+  %-----------HEADING-----------
+  \begin{center}
+      {\large Jason Zhang} \\ 
+      \begin{multicols}{2}
+          \begin{flushleft}
+              \href{mailto:zjjc123@gmail.com}{zjjc123@gmail.com}\\
+              \href{tel:+14258983210}{425-898-3210}
+          \end{flushleft}
+          \begin{flushright}
+              \href{{https://github.com/zjjc123}}{github.com/zjjc123}\\
+              \href{{https://www.linkedin.com/in/zjjc123/}}{linkedin.com/in/zjjc123/}
+          \end{flushright}
+      \end{multicols}
+  \end{center}
+  %-----------HEADING-----------
 
 
-\begin{center}
-    {\Huge Jason Zhang} \\ \vspace{-2pt}
-    \begin{multicols}{2}
-    \begin{flushleft}
-    \href{{your github page link}}{https://github.com/Zjjc123}\\
-    \href{{your linkedin page link}}{https://linkedin.com/in/zjjc123}
-    \end{flushleft}
+  %-----------EDUCATION-----------
+  \section{Education}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {University of Washington}{June 2025}
+        {Computer Science B.S.}{Seattle, WA}
+        \resumeItemListStart
+          \resumeItem{3.88/4.0 GPA}
+          \resumeItem{Relevant Coursework: }
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+  %-----------EDUCATION-----------
 
-    \begin{flushright}
-    \href{{your personal websit link}}{https://jasonzhang.dev/}
-    \\
-    \href{mailto:{your email adress}}{zjjc123@hotmail.com}
-    \\
-    (425) 898 - 3210
-    \end{flushright}
-    \end{multicols}
-\end{center}
-\vspace{-15pt}
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {AI THINKTANK, Software Engineer Intern}{July 2020 - September 2020}
-      {AI THINKTANK}{Bellevue, WA}
+
+  %-----------EXPERIENCE-----------
+  \section{Experience}
+
+    \resumeSubHeadingListStart
+    
+      \resumeSubheading
+        {Optum/Change Healthcare, Incoming AI Engineering Intern}{June 2023 - Present}
+        {Healthcare AI}{Nashville, Tennessee}
       \resumeItemListStart
-        \resumeItem{Developed 3D humanoid kinematics and quaternion rotation techniques \\ for displaying machine learning pose estimation}
-        \resumeItem{Integrated Unity as a Library on Android using C\#, Java, and Kotlin}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
-\vspace{-5pt}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Key Club, Community Service Manager}{March 2020 - June 2021}
-      {Eastlake High School Key Club}{Sammamish, WA}
+        \resumeItem{Incomming 2023 Summer AI Engineering Intern.}
+      \resumeItemListEnd
+
+
+      \resumeSubheading
+        {University of Washington, Research Assistant }{December 2022 - Present}
+        {Radiation Oncology NLP}{Seattle, WA}
       \resumeItemListStart
-        \resumeItem{Created a website for 3000+ students at my high school to track service hours \\ by using JavaScript, React, and Firebase (ehs-service.org)}
-        \resumeItem{Managed an open sourced community on GitHub for future maintenance}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
-\vspace{-5pt}
-%-----------EDUCATION-----------
-\section{Education}
- \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Washington}{2021 - 2025}
-      {Undergraduate Student}{Seattle, WA}
-  \resumeSubHeadingListEnd
+        \resumeItem{Used NLP to contextualize and analyze extensive biomedical data, including grant proposals, clinical notes, and safety reports.}
+        \resumeItem{Applied state-of-the-art transformer models, and various supervised and unsupervised learning methods to medical data.}
+      \resumeItemListEnd
 
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{GPA}{: 3.91} \\
-     \textbf{Classes}{: Data Structures and Parallelism, Hardware Software Interface, Calculus III, Differential Equations} \\
-     \textbf{Planned}{:Synthetic Biology, Systems Programming}
-    }}
- \end{itemize}
-  \vspace{-10pt}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Eastlake High School}{2017 - 2021}
-      {Student}{Sammamish, WA}
-  \resumeSubHeadingListEnd
+      \resumeSubheading
+        {Applied Hearing Science Lab, Research Assistant }{December 2022 - Present}
+        {Self-fitting Hearing Aid Application}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Used React.js to develop accessible and dynamic UI for a novel self hearing aid fitting process.}
+        \resumeItem{Applied fitting methods including matrix operations and PCA in pure JavaScript.}
+        \resumeItem{Created a Node.js server hosted on OpenMHA firmware to serve React app and communicate with the hearing aid firmware and settings.}
+      \resumeItemListEnd
 
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{GPA}{: 4.0/4.0} \\
-     \textbf{AP}{: AP Biology (5/5), AP Calculus AB (5/5), AP Calculus BC (5/5), AP Chemistry (5/5), AP Computer Science P (5/5), AP Computer Science A (5/5), AP Government (5/5), AP Macroeconomics (5/5), AP Microeconomics (5/5), AP Statistics (5/5), AP Physics 1 (5/5)..} \\
-     \textbf{Advanced Classes}{: Multivariable Calculus, Linear Algebra}
-    }}
- \end{itemize}
+      \resumeSubheading
+        {Sportsbox AI, SWE Intern}{July 2020 - September 2020}
+        {AI Golf Solution}{Bellevue, WA}
+      \resumeItemListStart
+        \resumeItem{Developed 3D humanoid kinematics and quaternion rotation techniques for displaying machine learning pose estimation.}
+        \resumeItem{Integrated Unity as a Library on Android using C\#, Java, and Kotlin.}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+  %-----------EXPERIENCE-----------
+  
+  %-----------EVENTS-----------
+  \section{Events and Awards}
+
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {eBay ML Challenge 2022}{Novemeber 2022}
+        {2nd place at eBay Competition}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Lead a team to place second place in the eBay ML Challenge 2022}
+        \resumeItem{Trained robust NER models using transformers that classified various labels in product titles.}
+      \resumeItemListEnd
 
 
-%-----------PROGRAMMING SKILLS-----------
-\section{Skills and Languages} 
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    \textbf{Languages}{: C, C++, C\#, Java, JavaScript(React, NodeJS), Python, Rust} \\
-     \textbf{CI/CD}{: GitHub Actions} \\
-     \textbf{Cloud}{: Firebase Functions, Firestore}\\
-     \textbf{Version Control}{: Git, GitHub} \\
-     \textbf{Video Editing}{: Davinci Resolve, Adobe Premiere Pro, Adobe After Effects} \\
-     \textbf{Photography and Graphics}{: Adobe Photoshop, Adobe Lightroom} \\
-    }}
- \end{itemize}
- \vspace{-20pt}
+      \resumeSubheading
+        {Dubhacks ‘22 T-Mobile Track}{October 2022}
+        {Most Marketable Award }{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Won the Most Marketable Award by creating a Package Tracking Device using T-Mobile DevEdge IoT Developer Kit}
+        \resumeItem{Wrote custom firmware code in C to collect and analyze data from various sensors.}
+      \resumeItemListEnd
 
-%-----------EXTRACURRICULAR-----------
-\section{Extracurricular}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{VEX Robotics Team 3638A}{: Worked in a team environment to implement robotics controls,
-autonomous controls, computer vision, PID control, and odometry.
-in C++ and C for the Vex Robotics Competition.} \\
-     \textbf{HOSA International Competitions}{: Won first place internationally at the HOSA International Leadership Conference for creating a public service announcement regarding current health issues.} 
+      \resumeSubheading
+        {Jane Street ETC (Electronic Trading Challenge)}{July 2022}
+        {Live simulated market making competition}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{1st place in "Final Hour" scoring: \$1.5k total cash prize awarded to our team.}
+        \resumeItem{Created the best trading and market-making bot to generate the most profit each round in a simulated market.}
+      \resumeItemListEnd
 
-    }}
+    \resumeSubHeadingListEnd
+  %-----------EVENTS-----------
 
- \end{itemize}
- %-----------PROJECTS-----------
-\section{Projects}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    \textbf{Guipy}{: Open-sourced Python UI Library for pygame} \\
-    \textbf{Speechle}{: A wordle clone game with the goal of guessing speech obfuscated with Fourier Transform} \\
-    \textbf{Personal Portfolio}{: Personal portfolio built using React with modern UI and deployed with GitHub Actions} \\
-     \textbf{Cloude}{: A collaborative browser based programming IDE and compiler that allows programmers to work on the same project in real-time without merging conflicts} \\
-     
-     \textbf{Unite NEAT}{: AI Neural Evolution of Augmented Topologies in Unity \\
-     \textbf{N-Body Simulator}{: Python 2D and 3D n-body simulator} \\
-     \textbf{Vitality}{: Health and fitness tracker with on device heartbeat sensor} \\
-    }}}
+  %-----------OPEN SOURCE-----------
+  \section{Projects}
 
- \end{itemize}
+    \resumeSubHeadingListStart
+      
+      \resumeSubheading
+        {Visualization: Turkiye-Syria Earthquakes}{March 2022}
+        {A story told through data visualization}{}
+      \resumeItemListStart
+        \resumeItem{Developed an interactive scrolling narrative visualization using React and D3.js}
+        \resumeItem{Amplified the lesser-told story about the Turkiye-Syria Earthquakes that devastated the region in February of 2023.}
+        \resumeItem{Constructed various animated maps, bar charts, and other visualization techniques. Won best overall presentation in UW CSE 442 Wi.}
+      \resumeItemListEnd
 
+      \resumeSubheading
+        {Guipy}{May 2022}
+        {A python UI open-sourced library}{}
+      \resumeItemListStart
+        \resumeItem{Founded a pygames UI components library that allows users to quickly create graphical interfaces.}
+        \resumeItem{Created automatic polishing and version tagging with GitHub Action.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+        {EHS Service}{2020 - 2023}
+        {Eastlake Community Service Tracker Project}{}
+      \resumeItemListStart
+          \resumeItem{Maintained a live web service used by over 400 active students at Eastlake High School and officially endorsed by LWSD school district. }
+          \resumeItem{Enabled students of Eastlake Key Club to easily view, edit, and log their service hours in compliance with school requirements.}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+  %-----------Projects-----------
+
+  %-----------SKILLS-------------
+  \section{Technologies} 
+
+    \begin{itemize}[leftmargin=0in, label={}]
+        \item {
+          \resumeItemListStart
+            \resumeItem{\textbf{Languages:} C++, C\#, Java/Kotlin, SQL, Python, Rust, JavaScript, TypeScript.}
+            \resumeItem{\textbf{Data Science:} Transformers, Hugging Face, PyTorch, Pandas, NLTK, scikit-learn.}
+            \resumeItem{\textbf{Web Dev:} Node.js, React.js, Next.js, Tailwindcss, D3.js, Vega-Lite.}  
+            \resumeItem{\textbf{Misc:} Unity, Git, GitHub, Firebase}
+          \resumeItemListEnd
+        }
+    \end{itemize}
+  %-----------SKILLS-------------
+  
 \end{document}
